@@ -1,0 +1,39 @@
+.main-bar {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height:100px;
+    background-color: transparent;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+    color: white;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+.signup{
+    width: 100px;
+    background-color: rgb(14, 65, 12);
+    height: 30px;
+    text-align: center;
+    padding-top: 2px;
+    cursor: pointer;
+}
+.signup:hover{
+    background-color: rgb(20, 100, 17);
+}
+.logo{
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.login {
+    cursor: pointer;
+}
