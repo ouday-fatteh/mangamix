@@ -7,7 +7,7 @@ const Hello = () => {
         <div>
             <Navbar />
             <div className="hero" >
-            <img alt="Hero anime" class="background-img" src={heroimg} ></img>
+            <img alt="Hero anime" className="background-img" src={heroimg} ></img>
             <div className="black-overlay">
             <div className='hero-info'>
                 <h1>عدد غير محدود من المانجا و المزيد</h1>

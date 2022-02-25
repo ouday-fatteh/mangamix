@@ -59,3 +59,24 @@ input[type="text"] {
     outline: none;
     padding-left: 15px;
 }
+@media only screen and (max-width: 600px) {
+    .hero-info h1{
+        font-size: x-large;
+
+    }
+    .hero-info h2 {
+        font-size: large;
+    }
+    .hero-info h3 {
+        font-size: medium;
+    }
+    input[type="text"] {
+        width:70%;
+        
+    }
+    .btn-main{
+        width:30%;
+        
+    }
+    
+  }

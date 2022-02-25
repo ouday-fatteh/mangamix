@@ -1,6 +1,6 @@
 
 import './Navbar.css';
-
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Navbar = () => {
     return (
@@ -10,6 +10,7 @@ const Navbar = () => {
                     <span className='login'>Log in</span>
                     <span className='signup'>Sign up</span>
                 </div>
+                <span className='menu-mobile' onClick={()=>{alert("Navbar mobile under developement")}}><GiHamburgerMenu size={30}/></span>
         </div>
     )
 }

@@ -37,3 +37,22 @@
 .login {
     cursor: pointer;
 }
+.menu-mobile{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .logo{
+        position: absolute;
+        left: 5%;
+    }
+    .menu {
+        position: absolute;
+        display: none;
+    }
+    .menu-mobile{
+        right: 5%;
+        position: absolute;
+        display: block;
+        
+    }
+  }
