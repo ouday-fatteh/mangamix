@@ -9,6 +9,11 @@ export const userRegister = async (req,res) => {
     const salt = bcrypt.genSaltSync(saltRounds);
     const hashedPassword = bcrypt.hashSync(req.body.password, salt);
     const user = req.body;
+    UserData.findOne({email:user.email , username:user.username}).then(async User => {
+
+    
+
+    if (!User){
     const newUser = new UserData({
         username : user.username,
         email : user.email,
@@ -21,6 +26,11 @@ export const userRegister = async (req,res) => {
     } catch (error) {
         res.status(409).json({Error : error.message});
     }
+    }
+    else {
+        res.status(400).json({Message : "User already registred"});
+    }
+    })
 }
 
 //User login verification
@@ -43,7 +53,7 @@ export const userLogin = async (req,res) => {
             }
             else{
                 
-                return res.status(400).json({message:"email and password does not match"})
+                return res.status(400).json({message:"Password is wrong"})
             }
         });
     }
