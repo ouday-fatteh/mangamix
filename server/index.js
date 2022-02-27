@@ -4,13 +4,15 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import loginRoutes from './routes/login.js';
 
-const app = express();
 
+
+const app = express();
+app.use(cors());
 app.use('/api',loginRoutes);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}));
-app.use(cors());
+
 
 const CONNECTION_URL = "mongodb+srv://ouday11:ouday1999@cluster0.vng4x.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000 ;

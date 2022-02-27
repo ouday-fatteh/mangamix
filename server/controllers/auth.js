@@ -1,6 +1,10 @@
 import UserData from "../models/user.js";
 import bcrypt from 'bcrypt';
-import mongoose from "mongoose";
+import jwt from 'jsonwebtoken';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 
 //user register new account
 
@@ -9,7 +13,9 @@ export const userRegister = async (req,res) => {
     const salt = bcrypt.genSaltSync(saltRounds);
     const hashedPassword = bcrypt.hashSync(req.body.password, salt);
     const user = req.body;
-    UserData.findOne({email:user.email , username:user.username}).then(async User => {
+    const email = user.email;
+    const username = user.username;
+    UserData.findOne({email:email}).then(async User => {
 
     
 
@@ -20,16 +26,19 @@ export const userRegister = async (req,res) => {
         password: hashedPassword ,
         phoneNumber : user.phoneNumber
     });
+
+        
     try {
         await newUser.save();
-        res.status(201).json({message:"User created successfuly"});
+        res.status(201).json({Message:"تم إنشاء حساب المستخدم بنجاح"});
     } catch (error) {
-        res.status(409).json({Error : error.message});
+        res.status(409).json({Message : error.message});
     }
     }
     else {
-        res.status(400).json({Message : "User already registred"});
+        res.status(400).json({Message : "البريد الإلكتروني مسجل مسبقا"});
     }
+ 
     })
 }
 
@@ -41,7 +50,7 @@ export const userLogin = async (req,res) => {
     const password = user.password;
     UserData.findOne({email:email}).then(User => {
         if (!User) {
-           return res.status(400).json({message:"Account not found"})
+           return res.status(400).json({Message:"لا يوجد مستخدم بهذا البريد الإلكتروني"})
 
         }
         bcrypt.compare(password, User.password,(err,Data)=>{
@@ -49,11 +58,11 @@ export const userLogin = async (req,res) => {
             
             if (Data){
                 
-                return res.status(201).json({message:"login successful"})
+                return res.status(201).json({Message:`مرحبا بعودتك ${User.username}`})
             }
             else{
                 
-                return res.status(400).json({message:"Password is wrong"})
+                return res.status(400).json({Message:"البريد الإلكتروني أو كلمة المرور غير صالحة"})
             }
         });
     }

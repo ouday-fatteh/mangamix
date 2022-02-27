@@ -10,8 +10,8 @@ const [open,setOpen] = useState(false);
         <div className="main-bar">
                 <div className='logo'><Link to="/">Mang<span style={{color:"rgb(28, 131, 24)"}}>Up</span></Link></div>
                 <div className="menu">
-                    <span className='login'><Link to="/login">Log in</Link></span>
-                    <span className='signup'><Link to="/signup">Sign up</Link></span>
+                    <span className='login'><Link to="/login">تسجيل الدخول</Link></span>
+                    <span className='signup'><Link to="/signup">اشتراك</Link></span>
                 </div>
                 <span className='menu-mobile'  onClick={()=>{setOpen(!open)}}><GiHamburgerMenu size={30}/>
                 </span>

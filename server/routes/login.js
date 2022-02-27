@@ -6,6 +6,6 @@ const jsonParser = bodyParser.json()
 const router = express.Router();
  
 router.post('/register',jsonParser, userRegister);
-router.get('/login',jsonParser, userLogin);
+router.post('/login',jsonParser, userLogin);
 
 export default router;
