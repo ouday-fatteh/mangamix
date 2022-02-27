@@ -3,11 +3,11 @@ import './Navbar.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
 
-const Navbar = () => {
+const Navbar = (props) => {
     
 const [open,setOpen] = useState(false);
     return (
-        <div className="main-bar">
+        <div className="main-bar" style={{backgroundColor:props.isHome ? "black" : "transparent"}}>
                 <div className='logo'><Link to="/">Mang<span style={{color:"rgb(28, 131, 24)"}}>Up</span></Link></div>
                 <div className="menu">
                     <span className='login'><Link to="/login">تسجيل الدخول</Link></span>

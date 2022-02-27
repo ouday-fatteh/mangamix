@@ -44,7 +44,13 @@ const Login = () => {
                     { Data !== "" && Data.Message !== 'البريد الإلكتروني أو كلمة المرور غير صالحة' &&  Data.Message !== 'لا يوجد مستخدم بهذا البريد الإلكتروني' ? <div><div id="inputF" 
                             style={{border:"1px solid rgb(92, 255, 89)",color:"rgb(2, 140, 0)",height:"40px",display:"flex",
                             justifyContent:"space-between" ,paddingLeft:"15px",paddingRight:"15px" ,alignItems:"center"}}>
-                            {Data.Message} <img alt="" id='spinner' src={loader}></img></div><br /></div>:<div></div> }
+                            {Data.Message} <img alt="" id='spinner' src={loader}></img>   
+                            </div><br /></div> :<div></div> }
+                            {Data !== "" && Data.Message !== 'البريد الإلكتروني أو كلمة المرور غير صالحة' &&  Data.Message !== 'لا يوجد مستخدم بهذا البريد الإلكتروني' ?
+                            
+                            <div style={{display:"none"}}>{window.setTimeout(() => { window.location.href = 'http://localhost:3000/home'}, 3000)}</div>
+                                
+                            :""}
                       <input type="submit" id="inputD" value="تسجيل الدخول" style={{height:"40px",width:"350px"  ,color:"white"}}></input>
                   </form>
               </div>
