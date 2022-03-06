@@ -1,0 +1,71 @@
+.Herohome__main{
+    display: flex;
+    flex-direction:row ;
+    justify-content: flex-start;
+    background-image: url("../../images/herohome.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width:100%;
+    margin-top: 1.5rem;
+}
+.Herohome__main_overlay{
+    position: absolute;
+    height: 70vh;
+    width:97.7%;
+    margin-top: 1.5rem;
+    z-index: 10;
+    background: rgb(5,32,0);
+    background: radial-gradient(circle, rgba(5,32,0,0) 0%, rgba(6, 34, 0, 0.8) 57%, rgba(0,0,0,1) 90%);
+}
+.Herohome__left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2.5rem;
+    height: 100%;
+    justify-content: flex-end;
+    z-index: 20;
+}
+.Herohome__left-bottom-active {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+}
+.Herohome__left-bottom-title {
+    display: flex;
+    flex-direction: column;
+    color:white;
+    gap:0.5rem;
+}
+.Herohome__left-bottom-title h3{
+    font-weight: 500;
+}
+.Herohome__left-bottom-buttons{
+    display: flex;
+    margin-top: 2.5rem;
+    align-items: center;
+    justify-content: flex-start;
+    gap:2rem;
+
+}
+.Herohome__left-bottom-buttons div{
+    display: flex;
+    width: 35%;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    padding: 5px;
+    color: rgb(247, 247, 247);
+    background-color: rgba(24, 23, 23, 0.61);
+    justify-content: center;
+    cursor: pointer;
+    gap:1rem;
+    border-radius: 0.25rem;
+
+}
+.Herohome__left-bottom-buttons div:hover{
+
+    background-color: rgb(24, 148, 20);
+}

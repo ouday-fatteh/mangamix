@@ -1,0 +1,121 @@
+.NavbarHome__main-container{
+    width:100%;
+    height: 46px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0.25rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavbarHome__logo-menu-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.NavbarHome__logo-menu-container-logo{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    display: flex;
+    margin: 10px 0px;
+}
+
+.NavbarHome__logo-menu-container-menu{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2.5rem;
+    margin-right: 1.5rem;
+    display: flex;
+    width: 25rem;
+    justify-content: space-between;
+}
+
+.NavbarHome__logo-menu-container-menu div{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
+   cursor: pointer;
+}
+
+.NavbarHome__logo-menu-container-menu div:hover{
+    color: rgb(24, 148, 20);
+}
+
+.NavbarHome__account-container{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1.5rem;
+    min-width: 7rem;
+    min-height: 30px;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+.NavbarHome__account-container-account{
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    width: 120px;
+    border-radius: 0.25rem;
+}
+.NavbarHome__account-container-account:active{
+    background-color: rgb(37, 37, 37);
+}
+.NavbarHome__account-container-account:hover{
+    color:rgb(24, 148, 20);
+}
+li{
+    list-style: none;
+}
+.menu-icons:hover {
+    color: rgb(24, 148, 20);
+}
+.NavbarHome__account-container-profilepic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(24, 24, 24);
+    cursor: pointer;
+}
+.NavbarHome__account-container-profilepic:hover{
+     background-color:rgb(24, 148, 20) ;
+}
+
+.NavbarHome__search-container{
+    display: flex;
+    flex-direction: row;
+    gap:0.5rem;
+}
+
+.NavbarHome__search-container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width:25px;
+    border-radius: 4px;
+}
+.NavbarHome__search-container div:active{
+ background-color: rgb(51, 51, 51);
+}
+
+.NavbarHome__search-container input {
+    height: 25px;
+    border-radius: 25px;
+    background-color: rgb(24, 24, 24);
+    font-size: small;
+   
+}
