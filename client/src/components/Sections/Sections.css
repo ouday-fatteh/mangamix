@@ -1,0 +1,43 @@
+.sections__main {
+    width: 100%;
+    margin-top: 1.5rem ;
+    min-height: fit-content;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+    
+}
+.sections__main h3 {
+    margin-bottom: 0.1rem;
+}
+.sections__line {
+    height: 2px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    border-radius: 25px;
+}
+.sections__cardholder {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap:1.5rem;
+    flex-flow: row ;
+    overflow-y: hidden;
+    
+}
+.sections__scroll::-webkit-scrollbar{
+        display: none;
+}
+.sections__scroll{
+    margin-bottom: 1rem;
+}
+.sections__fade{
+    position: absolute;
+    height: 29.5%;
+    width: 4%;
+    z-index: 100;
+    right: 18px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 45%, rgba(0,0,0,1) 100%);
+}

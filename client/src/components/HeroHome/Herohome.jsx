@@ -9,7 +9,7 @@ import { slideImages } from './Images';
 
 const Herohome = () => {
         return (
-            <Slide indicators={true} arrows={false} duration={3000}> 
+            <Slide  arrows={false} duration={3000}> 
                 {slideImages.map((img,index) => {
                     return (
                         <>
