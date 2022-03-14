@@ -17,10 +17,10 @@ const NavbarHome = () =>  {
                </div>
                <div className="NavbarHome__logo-menu-container-menu">
                <IconContext.Provider value={{ color:'white',className: 'menu-icons'}}>
-                    <div><AiOutlineHome />Home</div>
-                    <div><HiOutlineTrendingUp />Trending</div>
-                    <div><VscFlame />Popular</div>
-                    <div><MdOutlineFavoriteBorder />My favorites</div>
+                    <div><AiOutlineHome /><a href="#">Home</a></div>
+                    <div><HiOutlineTrendingUp /><a href="#trending">Trending</a></div>
+                    <div><VscFlame /><a href="#popular">Popular</a></div>
+                    <div><MdOutlineFavoriteBorder /><a href="#favorites">My favorites</a></div>
                     </IconContext.Provider>
                </div>
             </div>

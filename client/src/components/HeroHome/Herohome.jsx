@@ -12,7 +12,7 @@ const Herohome = () => {
             <Slide  arrows={false} duration={3000}> 
                 {slideImages.map((img,index) => {
                     return (
-                        <>
+                        <div key={index}>
                         <div className='Herohome__main_overlay'></div>
                         <div className="Herohome__main"
                         style={{backgroundImage: `url('${img.url}')`}} key={img.title+index}>
@@ -39,7 +39,7 @@ const Herohome = () => {
                                 </div>
                             </div>
                         </div>
-                        </>
+                        </div>
                     )
                 })}
             </Slide>

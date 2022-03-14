@@ -119,3 +119,9 @@ li{
     font-size: small;
    
 }
+@media only screen and (max-width:600px){
+    .NavbarHome__search-container{display:none}
+    .NavbarHome__account-container-account{display:none}
+    .NavbarHome__logo-menu-container-menu{display:none}
+    .NavbarHome__account-container{justify-content:flex-end}
+}

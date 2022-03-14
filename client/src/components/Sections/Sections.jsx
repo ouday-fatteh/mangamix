@@ -4,7 +4,7 @@ import Mangacards from '../Mangacards/Mangacards';
 
 const Sections = (props) => {
     return (
-        <div className="sections__main">
+        <div className="sections__main" id={props.id}>
             <h3>{props.title}</h3>
             <div className='sections__line'></div>
             <div className='sections__scroll' style={{overflowX:"scroll"}}>

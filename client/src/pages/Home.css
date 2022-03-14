@@ -4,3 +4,6 @@
     background-color: rgb(15, 15, 15);    
     padding:1rem;
 }
+*{
+    scroll-behavior: smooth;
+}

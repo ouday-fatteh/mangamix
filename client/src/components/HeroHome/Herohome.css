@@ -12,7 +12,7 @@
     position: absolute;
     height: 70vh;
     width:97.7%;
-    margin-top: 1.5rem;
+    margin-top: 0rem;
     z-index: 10;
     background: rgb(5, 32, 0);
     background: linear-gradient(280deg, rgba(5,32,0,0) 0%, rgba(0, 0, 0, 0.247) 77%, rgba(0, 0, 0, 0.199) 99%);
@@ -67,4 +67,14 @@
 .Herohome__left-bottom-buttons div:hover{
 
     background-color: rgb(24, 148, 20);
+}
+@media only screen and (max-width : 600px) {
+    .Herohome__main{height:50vh}
+    .Herohome__left{width:100%}
+    .Herohome__left-bottom-title h1{font-size:40px}
+    .Herohome__left-bottom-title h3{font-size:16px}
+    .Herohome__left-bottom-title p{font-size:12px}
+    .Herohome__left-bottom-active{width: 100%;}
+    .Herohome__left-bottom-buttons{justify-content: space-evenly;}
+    .Herohome__left-bottom-buttons div{width:100%;font-size: 12px;}
 }

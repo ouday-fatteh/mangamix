@@ -1,0 +1,38 @@
+.adssections__main {
+    width: 100%;
+    display:flex;
+    flex-direction:row-reverse;
+    margin-top: 1.5rem ;
+    min-height: 400px;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    font-family: 'Cairo';
+}
+.adssections__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap:1.5rem;
+}
+.adssections__left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+#btn--1{
+    width: 200px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    
+}
+@media only screen and (max-width : 600px ){
+    .adssections__main{flex-direction:column;justify-content:space-around;align-items:center;gap:3rem;padding-top:3rem}
+    .adssections__right{width:100%}
+    .adssections__right h2{font-size:16px}
+    .adssections__left{width:100%}
+}
